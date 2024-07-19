@@ -21,8 +21,7 @@ Para ejecutar el proyecto en modo desarrollo, necesitarás el siguiente comando:
 npm run start-app-dev
 Este comando inicia tanto el backend como el frontend en modo desarrollo.
 Para iniciar en modo producción, necesitarás el siguiente comando:
-Desarrollo Backend: npm run start-back
-Desarrollo Frontend: npm run start-client-dev
+npm run start-app-prod
 
 ## Configuración
 
