@@ -29,7 +29,7 @@ Este comando ejecuta el backend optimizado para producción, y el frontend debe 
 
 ## Configuración
 
-Para correr este proyecto, necesitas configurar la variable de entorno `MONGODB_URI`. Puedes hacerlo creando un archivo `.env` en la raíz del proyecto con el siguiente contenido:
+Para correr este proyecto, necesitas configurar la variable de entorno `MONGODB_URI`. Puedes hacerlo creando un archivo `.env` en la raíz del proyecto backend con el siguiente contenido:
 
 ```env
-MONGODB_URI= mongodb+srv://laurapra17:1234@cluster0.3hnegbh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0:
+MONGODB_URI= "Aqui la URL de la base de datos"
