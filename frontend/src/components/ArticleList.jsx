@@ -11,14 +11,18 @@ import {
 import { useQuery } from "@tanstack/react-query";
 
 //obtengo los articulos
-const fetchArticles= async() => {
-  const {data} = await axios.get('http://localhost:9000/articles');
+const fetchArticles = async () => {
+  const { data } = await axios.get("http://localhost:9000/articles");
   return data;
 };
-const ArticleList=() =>{
+const ArticleList = () => {
   //uso reactQ para obtener los articles
-  const {data: articles, isLoading, error}= useQuery({
-    queryKey: ['articles'],
+  const {
+    data: articles,
+    isLoading,
+    error,
+  } = useQuery({
+    queryKey: ["articles"],
     queryFn: fetchArticles,
   });
   if (isLoading) return <p>Loading...</p>;
@@ -34,11 +38,13 @@ const ArticleList=() =>{
                 key={article.id + `${key}`}
                 className="gap-5 items-center shadow-md rounded-lg overflow-hidden flex p-5"
               >
-                <img
-                  src={article.urlToImage}
-                  alt={article.title}
-                  className="bg-white shadow-md rounded-lg overflow-hidden aspect-square w-full max-w-[100px] object-cover"
-                />
+                <div className="w-[100px] h-[100px] relative">
+                  <img
+                    src={article.urlToImage}
+                    alt={article.title}
+                    className="bg-white shadow-md rounded-lg overflow-hidden aspect-square w-[100px] h-[100px] max-w-[100px] object-cover"
+                  />
+                </div>
                 <div>
                   <CardHeader className="pt-0">
                     <CardTitle>{article.title}</CardTitle>
