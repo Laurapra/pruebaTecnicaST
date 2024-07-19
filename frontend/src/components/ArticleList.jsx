@@ -25,8 +25,8 @@ const ArticleList = () => {
     queryKey: ["articles"],
     queryFn: fetchArticles,
   });
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error loading articles: {error.message}</p>;
+  if (isLoading) return <p>Cargando...</p>;
+  if (error) return <p>Hubo un error al consular los articulos: {error.message}</p>;
 
   return (
     <>
@@ -36,7 +36,7 @@ const ArticleList = () => {
             {articles.map((article, key) => (
               <Card
                 key={article.id + `${key}`}
-                className="gap-5 items-center shadow-md rounded-lg overflow-hidden flex p-5"
+                className="gap-5 items-center shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row p-5"
               >
                 <div className="w-[100px] h-[100px] relative">
                   <img
@@ -61,7 +61,8 @@ const ArticleList = () => {
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:underline"
                     >
-                      Read more
+                      
+                      Ver más
                     </a>
                   </CardFooter>
                 </div>
