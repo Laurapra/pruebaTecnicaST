@@ -25,11 +25,11 @@ Para ejecutar el proyecto en modo producción, primero construye los archivos de
 npm run build
 Luego, inicializa el servidor en modo producción con: 
 npm run start-back
-Este comando ejecuta el backend optimizado para producción, y el frontend debe ser servido desde los archivos contruidos.
+Este comando ejecuta el backend optimizado para producción, y el frontend debe ser servido desde los archivos construidos.
 
 ## Configuración
 
-Para correr este proyecto, necesitas configurar la variable de entorno `MONGODB_URI`. Puedes hacerlo creando un archivo `.env` en la raíz del proyecto con el siguiente contenido:
+Para correr este proyecto, necesitas configurar la variable de entorno `MONGODB_URI`. Puedes hacerlo creando un archivo `.env` en la raíz del proyecto backend con el siguiente contenido:
 
 ```env
-MONGODB_URI= mongodb+srv://laurapra17:1234@cluster0.3hnegbh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0:
+MONGODB_URI= "URL base de datos mongo";
