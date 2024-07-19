@@ -29,4 +29,4 @@ Desarrollo Frontend: npm run start-client-dev
 Para correr este proyecto, necesitas configurar la variable de entorno `MONGODB_URI`. Puedes hacerlo creando un archivo `.env` en la raíz del proyecto backend con el siguiente contenido:
 
 ```env
-MONGODB_URI= "URL base de datos mongo";
+MONGODB_URI= "URL de la base de datos"
