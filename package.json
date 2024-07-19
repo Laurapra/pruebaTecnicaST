@@ -10,7 +10,9 @@
     "preview-client": "npm --prefix frontend run preview",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm --prefix frontend install && npm run --prefix frontend build",
-    "start": "concurrently \"npm run start-back\" \"npm run start-client-dev\""
+    "start-app-dev": "concurrently \"npm run start-back\" \"npm run start-client-dev\"",
+    "start-app-prod": "npm run build-client && npm run start-back && npm run preview-client"
+
   },
   "author": "Laura Rodriguez",
   "license": "ISC",
