@@ -18,14 +18,11 @@ Antes de ejecutar este proyecto, asegúrate de tener las siguientes herramientas
 
 ## Comandos de Ejecución
 Para ejecutar el proyecto en modo desarrollo, necesitarás el siguiente comando:
-npm start
-Este comando inicia tanto el backend como el frontend en modo desarrollo. El backend se ejecutará con 'npm run start-back' y el frontend con 'npm run start-client-dev'.
-
-Para ejecutar el proyecto en modo producción, primero construye los archivos del frontend:
-npm run build
-Luego, inicializa el servidor en modo producción con: 
-npm run start-back
-Este comando ejecuta el backend optimizado para producción, y el frontend debe ser servido desde los archivos contruidos.
+npm run start-app-dev
+Este comando inicia tanto el backend como el frontend en modo desarrollo.
+Para iniciar en modo producción, necesitarás el siguiente comando:
+Desarrollo Backend: npm run start-back
+Desarrollo Frontend: npm run start-client-dev
 
 ## Configuración
 
