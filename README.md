@@ -25,7 +25,7 @@ npm run start-app-prod
 
 ## Configuración
 
-Para correr este proyecto, debes instalar las dependencias del backend y del frontend, también necesitas configurar la variable de entorno `MONGODB_URI`. Puedes hacerlo creando un archivo `.env` en la raíz del proyecto backend con el siguiente contenido:
+Para correr este proyecto, debes instalar las dependencias del backend y del frontend el comando npm run install te ayudará a instalar las dependencias, también necesitas configurar la variable de entorno `MONGODB_URI`. Puedes hacerlo creando un archivo `.env` en la raíz del proyecto backend con el siguiente contenido:
 
 ```env
 MONGODB_URI= "URL de la base de datos"
