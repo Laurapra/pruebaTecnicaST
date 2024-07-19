@@ -24,7 +24,8 @@ mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   connectTimeoutMS: 10000, //10seg
-  socketTimeoutMS: 45000, //45seg
+  socketTimeoutMS: 45000, //45seg,
+  
 })
 .then(() => {
   console.log('uri', uri);

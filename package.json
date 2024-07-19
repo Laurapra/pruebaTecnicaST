@@ -1,0 +1,20 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Backend/src/app.js",
+  "scripts": {
+    "start-back": "npm --prefix Backend start",
+    "start-client-dev": "npm --prefix frontend run dev",
+    "build-client": "npm --prefix frontend run build",
+    "preview-client": "npm --prefix frontend run preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm --prefix frontend install && npm run --prefix frontend build",
+    "start": "concurrently \"npm run start-back\" \"npm run start-client-dev\""
+  },
+  "author": "Laura Rodriguez",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
